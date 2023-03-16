@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raindrop</title>
+<style>
+  body{
+    background:#F3AC3C;
+  }
+  div{
+    width: 80px;
+    height: 80px;
+    background: #254241;
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform:translate(-50%)rotate(45deg);
+    border-radius: 0 50px 50px 50px;
+  }
+  div:nth-of-type(2){
+    content:'';
+    position:absolute;
+    width: 80px;
+    height: 80px;
+    background: #254241;
+    position:absolute;
+    top:26.5%;
+    left:50%;
+    transform:translate(-50%,-50%)rotate(-45deg);
+    border-radius:50px 50px 50px 0 ;
+  }
+  div:nth-of-type(3){
+    content:'';
+    position:absolute;
+    width: 80px;
+    height: 80px;
+    background: #254241;
+    position:absolute;
+    top:36%;
+    left:45%;
+    transform:translate(-50%,-50%)rotate(-135deg);
+    border-radius:50px 50px 50px 0 ;
+  }
+</style>
+</head>
+<body>
+    <div></div>
+<div></div>
+<div></div>
+</body>
+</html>

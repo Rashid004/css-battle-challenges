@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css battle</title>
+  <style>
+  body{
+    background:#000;
+  }
+  *,
+  :before,
+  :after {
+   content:'';
+   position:fixed;
+   color:#fff;
+  }
+  b {
+  background:#fff;
+  width:75px;
+  height:100px;
+  border-radius:50px 0 0 50px;
+  left:50%;
+  bottom:50%;  
+  -webkit-box-reflect:right -1px;
+  }
+  b:before{
+   background:#000;
+   width:50px;
+   height:40px;
+   border-radius:50%;
+   top:42%;
+   left:51%;
+   transform:rotate(-30deg);
+  }
+ c:before{
+   width:20px;
+   height:19px;
+   top:37.5%;
+   left:58.2%; 
+   background:#fff;
+   transform:rotate(-45deg); 
+  }
+  c:after{
+   background:#fff;
+   width:25px;
+   height:25px;
+   border-radius:50%;
+   left:48.2%;
+   top:36.5%;
+   box-shadow: 10px -10px;
+  }
+  body:after{
+  width:15px;
+  height:20px;
+  background:#fff;
+  bottom:60px;
+  left:173px;
+  box-shadow: 0 0 0 10px inset, 20px 0,40px 0; 
+  }
+  d:before{
+   width:19px;
+   height:19px;
+   bottom:84px;
+   left:114px; 
+   background:#fff;
+   transform:rotate(-45deg);  
+  }
+  d:after {
+   background:#fff;
+   width:24px;
+   height:24px;
+   border-radius:50%;
+   left:106px;
+   bottom:65px;
+   box-shadow: 10px -12px;  
+   transform:rotate(-85deg); 
+  }
+</style>
+</head>
+<body>
+<b><c><d>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pacman</title>
+<style>
+  body{
+    background:#000;
+  }
+  *,
+  :before,
+  :after{
+    content:'';
+    position:fixed;
+  }
+  div:nth-of-type(1){
+    width: 60px;
+    height: 60px;
+    background: #E0E246;
+    position:fixed;
+    top:40%;
+    left:15%;
+    border-radius:50%;
+  }
+  body:after{
+    width:40px;
+    height:40px;
+    background:#000;
+    top:43.5%;
+    left:24%;
+    border-radius:50px 0 0 0;
+    transform:rotate(135deg)
+  }
+ div:nth-of-type(2){
+   width:60px;
+   height:58px;
+   background:#C74E4E;
+   position:fixed;
+   top:40%;
+   right:15%;
+   border-radius: 50px 50px 0 0;
+ }
+  html:after {
+    width:10px;
+    height:10px;
+    background:#fff;
+    border-radius:50%;
+    bottom:48.4%;
+    left:41%;
+    box-shadow:30px 0px #fff,
+               60px 0px #fff;
+  }
+  div:nth-of-type(3){
+    width:30px;
+    height:30px;
+    background:#000;
+    bottom:39.2%;
+    right:24%;
+    clip-path:polygon(50% 0,50% 50%, 0 50%);
+    transform:rotate(-135deg);
+  }
+  div:nth-of-type(2):after {
+    width:30px;
+    height:30px;
+    background:#000;
+    bottom:39.2%;
+    right:19%;
+    clip-path:polygon(50% 0,50% 50%, 0 50%);
+    transform:rotate(-135deg); 
+  }
+ div:nth-of-type(2):before{
+    width:30px;
+    height:30px;
+    background:#000;
+    bottom:39.2%;
+    right:14%;
+    clip-path:polygon(50% 0,50% 50%, 0 50%);
+    transform:rotate(-135deg); 
+ }
+ 
+</style>
+</head>
+<body>
+<div></div>
+<div></div>
+<div></div>
+</body>
+</html>
